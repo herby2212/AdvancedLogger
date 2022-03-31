@@ -1,0 +1,14 @@
+#Do not change the main Structure of the config or you get a error message on server start!
+AVL:
+  Metrics: true
+  Command_Log: true
+  Chat_Log: true
+  Player_Name_Log: true
+  Player_UUID_Log: true
+  Console_Commands_Log: true
+  CommandBlock_Logging: true
+  ServerData: true
+  Join_Log: true
+  Quit_Log: true
+  KillDeathLog: true
+  Mods_Log: true
