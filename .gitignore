@@ -1,4 +1,9 @@
 /bin/
+<<<<<<< HEAD
 /.classpath
 /.project
+=======
+/.project
+/.classpath
+>>>>>>> refs/heads/snapshot
 /.settings

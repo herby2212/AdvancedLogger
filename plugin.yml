@@ -1,0 +1,26 @@
+name: AdvancedLogger
+main: de.Herbystar.AVL.Main
+version: 2.8
+author: Herbystar
+website: https://github.com/herby2212/AdvancedLogger
+description: Advanced IP Logger and more!
+commands:
+  avl:
+    usage: /avl
+    description: Main command!
+permissions:
+  Avl.commands.*:
+    description: Permission for all ingame commands!
+    children:
+      Avl.commands.cmdspy: true
+      Avl.commands.modlist: true
+  Avl.bypass.*:
+    description: Give you all bypass permissions!
+    children:
+      Avl.bypass.chat: true
+      Avl.bypass.commands: true
+      Avl.bypass.account: true
+      Avl.bypass.join: true
+      Avl.bypass.quit: true
+      Avl.bypass.death: true
+      Avl.bypass.kill: true
