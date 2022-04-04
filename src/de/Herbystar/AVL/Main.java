@@ -72,7 +72,8 @@ public class Main extends JavaPlugin {
 		if(Main.instance.getConfig().getBoolean("AVL.Mods_Log") == false) {
 			return;
 		}
-		if(Bukkit.getVersion().contains("1.13") | Bukkit.getVersion().contains("1.14") | Bukkit.getVersion().contains("1.15") | Bukkit.getVersion().contains("1.16") | Bukkit.getVersion().contains("1.17")) {
+		if(Bukkit.getVersion().contains("1.13") | Bukkit.getVersion().contains("1.14") | Bukkit.getVersion().contains("1.15") | 
+				Bukkit.getVersion().contains("1.16") | Bukkit.getVersion().contains("1.17") | Bukkit.getVersion().contains("1.18")) {
 			forgeChannel = "fml:handshake";
 		} else {
 			forgeChannel = "FML|HS";
@@ -162,6 +163,7 @@ public class Main extends JavaPlugin {
 		Main.instance.saveConfig(config, f);
 	}
 	
+	@SuppressWarnings("deprecation")
 	private void saveServerData() {
 		File f = new File("plugins/AdvancedLogger", "ServerData.yml");
 		YamlConfiguration config = YamlConfiguration.loadConfiguration(f);
@@ -172,7 +174,8 @@ public class Main extends JavaPlugin {
 			String motd = Bukkit.getServer().getMotd();
 			int port = Bukkit.getServer().getPort();
 			config.set("Name", name);
-			if(!Bukkit.getVersion().contains("1.14") && !Bukkit.getVersion().contains("1.15") && !Bukkit.getVersion().contains("1.16") && !Bukkit.getVersion().contains("1.17")) {
+			if(!Bukkit.getVersion().contains("1.14") && !Bukkit.getVersion().contains("1.15") && 
+					!Bukkit.getVersion().contains("1.16") && !Bukkit.getVersion().contains("1.17") && !Bukkit.getVersion().contains("1.18")) {
 				String id = Bukkit.getServerId();
 				config.set("ID", id);
 			}
