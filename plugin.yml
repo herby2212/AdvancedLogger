@@ -1,6 +1,6 @@
 name: AdvancedLogger
 main: de.Herbystar.AVL.Main
-version: 3.0-SNAPSHOT
+version: 3.0
 author: Herbystar
 website: https://github.com/herby2212/AdvancedLogger
 description: Advanced IP Logger and more!
