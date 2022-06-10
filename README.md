@@ -1,5 +1,5 @@
 # AdvancedLogger
-##### Supported MC versions: 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18
+##### Supported MC versions: 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19
 
 ## General
 AdvancedLogger is a Spigot Plugin with high logging capabilities while beeing fully customizable accross all Minecraft versions.

@@ -73,7 +73,8 @@ public class Main extends JavaPlugin {
 			return;
 		}
 		if(Bukkit.getVersion().contains("1.13") | Bukkit.getVersion().contains("1.14") | Bukkit.getVersion().contains("1.15") | 
-				Bukkit.getVersion().contains("1.16") | Bukkit.getVersion().contains("1.17") | Bukkit.getVersion().contains("1.18")) {
+				Bukkit.getVersion().contains("1.16") | Bukkit.getVersion().contains("1.17") | Bukkit.getVersion().contains("1.18") | 
+				Bukkit.getVersion().contains("1.19")) {
 			forgeChannel = "fml:handshake";
 		} else {
 			forgeChannel = "FML|HS";
@@ -175,7 +176,7 @@ public class Main extends JavaPlugin {
 			int port = Bukkit.getServer().getPort();
 			config.set("Name", name);
 			if(!Bukkit.getVersion().contains("1.14") && !Bukkit.getVersion().contains("1.15") && 
-					!Bukkit.getVersion().contains("1.16") && !Bukkit.getVersion().contains("1.17") && !Bukkit.getVersion().contains("1.18")) {
+					!Bukkit.getVersion().contains("1.16") && !Bukkit.getVersion().contains("1.17") && !Bukkit.getVersion().contains("1.18")  && !Bukkit.getVersion().contains("1.19")) {
 				String id = Bukkit.getServerId();
 				config.set("ID", id);
 			}
