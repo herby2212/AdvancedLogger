@@ -12,3 +12,6 @@ AVL:
   Quit_Log: true
   KillDeathLog: true
   Mods_Log: true
+  BlockPlayersWithMods:
+    Enabled: false
+    KickMessage: 'This server does not allow the usage of mods.'

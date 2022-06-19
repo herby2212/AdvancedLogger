@@ -16,7 +16,7 @@ public class PluginMessageReceivedHandler implements PluginMessageListener {
 	
 	private String originalModList;
 	
-	public void onPluginMessageReceived(String channel, Player player, byte[] message) {	
+	public void onPluginMessageReceived(String channel, Player player, byte[] message) {
 		channel = channel.replaceAll("[\\000-\\t\\013\\f\\016-\\037]", "");
 	    
 	    if(message[0] != 2) {
